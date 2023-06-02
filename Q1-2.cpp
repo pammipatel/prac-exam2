@@ -7,8 +7,8 @@ int countOddEven(int** matrix, int nRows, int nCols, bool even) {
 
     for (int p = 0; p < nRows; p++) {
         for (int d = 0; d < nCols; d++) {
-            if ((matrix[p][d] % 2 == 0 && even) || (matrix[p][d] % 2 != 0 && !even)) {  // If the element is even and even=true, or if the element is odd and even=false,
-                 count++;  // increment the count
+            if ((matrix[p][d] % 2 == 0 && even) || (matrix[p][d] % 2 != 0 && !even)) {  // condition to check if the element is even and even=true, or if the element is odd and even=false,
+                 count++;  // If it matches the condition increment the count
             }
         }
     }
